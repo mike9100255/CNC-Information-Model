@@ -1,6 +1,6 @@
 # CNC-Information-Model
 ```
-git clone https://github.com/TKU-ME-Lab/CNC-Information-Model --recursive
+git clone https://github.com/Your Account Name/CNC-Information-Model --recursive
 ```
 ## Step 1 Compile UA-ModelCompiler
   1. Open solution file in the UA-ModelCompiler directory.
