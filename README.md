@@ -1,5 +1,7 @@
 # CNC-Information-Model
-
+```
+git clone https://github.com/OPCFoundation/UA-ModelCompiler --recursive
+```
 ## Step 1 Compile UA-ModelCompiler
   1. Open solution file in the UA-ModelCompiler directory.
   2. Build Project in Release Mode.
