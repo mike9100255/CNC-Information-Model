@@ -1,4 +1,5 @@
 # CNC-Information-Model
+### Replace Your Account Name in Url
 ```
 git clone https://github.com/Your Account Name/CNC-Information-Model --recursive
 ```
@@ -11,3 +12,4 @@ git clone https://github.com/Your Account Name/CNC-Information-Model --recursive
 
 ## Step 3 Bulid Model
   1. Run BuildCNCNodeSet.bat in cmd or powershell
+ 
