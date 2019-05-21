@@ -5,3 +5,4 @@ CncAxisListType,1008,ObjectType
 CncInterfaceType_CncAxisList,15001,Object
 CncInterface,15002,Object
 CncInterface_CncAxisList,15003,Object
+CncAlarmType,15004,ObjectType

@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+ * Copyright (c) 2005-2019 The OPC Foundation, Inc. All rights reserved.
+ *
+ * OPC Foundation MIT License 1.00
+ * 
+ * Permission is hereby granted, free of charge, to any person
+ * obtaining a copy of this software and associated documentation
+ * files (the "Software"), to deal in the Software without
+ * restriction, including without limitation the rights to use,
+ * copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the
+ * Software is furnished to do so, subject to the following
+ * conditions:
+ * 
+ * The above copyright notice and this permission notice shall be
+ * included in all copies or substantial portions of the Software.
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ * OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ * HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ * OTHER DEALINGS IN THE SOFTWARE.
+ *
+ * The complete license agreement can be found here:
+ * http://opcfoundation.org/License/MIT/1.00/
+-->
+
+<uax:ListOfNodeState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+  <uax:NamespaceUris>
+    <uax:NamespaceUri>http://www.opcfoundation.org/CNC/</uax:NamespaceUri>
+  </uax:NamespaceUris>
+  <CncComponentType xmlns="http://www.opcfoundation.org/CNC/">
+    <uax:NodeClass>ObjectType_8</uax:NodeClass>
+    <uax:NodeId>
+      <uax:Identifier>ns=1;i=1001</uax:Identifier>
+    </uax:NodeId>
+    <uax:BrowseName>
+      <uax:NamespaceIndex>1</uax:NamespaceIndex>
+      <uax:Name>CncComponentType</uax:Name>
+    </uax:BrowseName>
+    <uax:Description>
+      <uax:Locale></uax:Locale>
+      <uax:Text>Base component for soft- or hardware elements of a CNC system.</uax:Text>
+    </uax:Description>
+    <uax:SuperTypeId>
+      <uax:Identifier>i=58</uax:Identifier>
+    </uax:SuperTypeId>
+  </CncComponentType>
+  <CncDriveType xmlns="http://www.opcfoundation.org/CNC/">
+    <uax:NodeClass>ObjectType_8</uax:NodeClass>
+    <uax:NodeId>
+      <uax:Identifier>ns=1;i=1003</uax:Identifier>
+    </uax:NodeId>
+    <uax:BrowseName>
+      <uax:NamespaceIndex>1</uax:NamespaceIndex>
+      <uax:Name>CncDriveType</uax:Name>
+    </uax:BrowseName>
+    <uax:Description>
+      <uax:Locale></uax:Locale>
+      <uax:Text>Base component for CNC specific drive componentes (e.g. axis or spindle).</uax:Text>
+    </uax:Description>
+    <uax:SuperTypeId>
+      <uax:Identifier>i=58</uax:Identifier>
+    </uax:SuperTypeId>
+    <uax:References>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=45</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=1001</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+    </uax:References>
+  </CncDriveType>
+  <CncAxisListType xmlns="http://www.opcfoundation.org/CNC/">
+    <uax:NodeClass>ObjectType_8</uax:NodeClass>
+    <uax:NodeId>
+      <uax:Identifier>ns=1;i=1008</uax:Identifier>
+    </uax:NodeId>
+    <uax:BrowseName>
+      <uax:NamespaceIndex>1</uax:NamespaceIndex>
+      <uax:Name>CncAxisListType</uax:Name>
+    </uax:BrowseName>
+    <uax:Description>
+      <uax:Locale></uax:Locale>
+      <uax:Text>List Type of CNC axis objects.</uax:Text>
+    </uax:Description>
+    <uax:SuperTypeId>
+      <uax:Identifier>i=58</uax:Identifier>
+    </uax:SuperTypeId>
+    <uax:References>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=45</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>i=58</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=35</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>i=85</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+    </uax:References>
+  </CncAxisListType>
+  <CncInterfaceType xmlns="http://www.opcfoundation.org/CNC/">
+    <uax:NodeClass>ObjectType_8</uax:NodeClass>
+    <uax:NodeId>
+      <uax:Identifier>ns=1;i=1007</uax:Identifier>
+    </uax:NodeId>
+    <uax:BrowseName>
+      <uax:NamespaceIndex>1</uax:NamespaceIndex>
+      <uax:Name>CncInterfaceType</uax:Name>
+    </uax:BrowseName>
+    <uax:Description>
+      <uax:Locale></uax:Locale>
+      <uax:Text>Entry point to CNC data interface.s</uax:Text>
+    </uax:Description>
+    <uax:SuperTypeId>
+      <uax:Identifier>i=58</uax:Identifier>
+    </uax:SuperTypeId>
+    <uax:References>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=45</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>i=58</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+    </uax:References>
+    <CncAxisList>
+      <uax:NodeClass>Object_1</uax:NodeClass>
+      <uax:NodeId>
+        <uax:Identifier>ns=1;i=15001</uax:Identifier>
+      </uax:NodeId>
+      <uax:BrowseName>
+        <uax:NamespaceIndex>1</uax:NamespaceIndex>
+        <uax:Name>CncAxisList</uax:Name>
+      </uax:BrowseName>
+      <uax:ReferenceTypeId>
+        <uax:Identifier>i=47</uax:Identifier>
+      </uax:ReferenceTypeId>
+      <uax:TypeDefinitionId>
+        <uax:Identifier>ns=1;i=1008</uax:Identifier>
+      </uax:TypeDefinitionId>
+      <uax:ModellingRuleId>
+        <uax:Identifier>i=78</uax:Identifier>
+      </uax:ModellingRuleId>
+      <uax:NumericId>15001</uax:NumericId>
+      <uax:References>
+        <uax:Reference>
+          <uax:ReferenceTypeId>
+            <uax:Identifier>i=45</uax:Identifier>
+          </uax:ReferenceTypeId>
+          <uax:TargetId>
+            <uax:Identifier>i=58</uax:Identifier>
+          </uax:TargetId>
+        </uax:Reference>
+        <uax:Reference>
+          <uax:ReferenceTypeId>
+            <uax:Identifier>i=35</uax:Identifier>
+          </uax:ReferenceTypeId>
+          <uax:TargetId>
+            <uax:Identifier>i=85</uax:Identifier>
+          </uax:TargetId>
+        </uax:Reference>
+      </uax:References>
+    </CncAxisList>
+  </CncInterfaceType>
+  <CncAlarmType xmlns="http://www.opcfoundation.org/CNC/">
+    <uax:NodeClass>ObjectType_8</uax:NodeClass>
+    <uax:NodeId>
+      <uax:Identifier>ns=1;i=15004</uax:Identifier>
+    </uax:NodeId>
+    <uax:BrowseName>
+      <uax:NamespaceIndex>1</uax:NamespaceIndex>
+      <uax:Name>CncAlarmType</uax:Name>
+    </uax:BrowseName>
+    <uax:Description>
+      <uax:Locale></uax:Locale>
+      <uax:Text>Event transmitting Alarms within a CNC system.</uax:Text>
+    </uax:Description>
+    <uax:SuperTypeId>
+      <uax:Identifier>i=58</uax:Identifier>
+    </uax:SuperTypeId>
+    <uax:References>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=45</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>i=10637</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+    </uax:References>
+  </CncAlarmType>
+  <CncInterface xmlns="http://www.opcfoundation.org/CNC/">
+    <uax:NodeClass>Object_1</uax:NodeClass>
+    <uax:NodeId>
+      <uax:Identifier>ns=1;i=15002</uax:Identifier>
+    </uax:NodeId>
+    <uax:BrowseName>
+      <uax:NamespaceIndex>1</uax:NamespaceIndex>
+      <uax:Name>CncInterface</uax:Name>
+    </uax:BrowseName>
+    <uax:Description>
+      <uax:Locale></uax:Locale>
+      <uax:Text>Entry point to CNC data interface</uax:Text>
+    </uax:Description>
+    <uax:ReferenceTypeId>
+      <uax:Identifier>i=47</uax:Identifier>
+    </uax:ReferenceTypeId>
+    <uax:TypeDefinitionId>
+      <uax:Identifier>ns=1;i=1007</uax:Identifier>
+    </uax:TypeDefinitionId>
+    <uax:NumericId>15002</uax:NumericId>
+    <uax:References>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=45</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>i=58</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+      <uax:Reference>
+        <uax:ReferenceTypeId>
+          <uax:Identifier>i=45</uax:Identifier>
+        </uax:ReferenceTypeId>
+        <uax:TargetId>
+          <uax:Identifier>ns=1;i=1007</uax:Identifier>
+        </uax:TargetId>
+      </uax:Reference>
+    </uax:References>
+    <CncAxisList>
+      <uax:NodeClass>Object_1</uax:NodeClass>
+      <uax:NodeId>
+        <uax:Identifier>ns=1;i=15003</uax:Identifier>
+      </uax:NodeId>
+      <uax:BrowseName>
+        <uax:NamespaceIndex>1</uax:NamespaceIndex>
+        <uax:Name>CncAxisList</uax:Name>
+      </uax:BrowseName>
+      <uax:ReferenceTypeId>
+        <uax:Identifier>i=47</uax:Identifier>
+      </uax:ReferenceTypeId>
+      <uax:TypeDefinitionId>
+        <uax:Identifier>ns=1;i=1008</uax:Identifier>
+      </uax:TypeDefinitionId>
+      <uax:NumericId>15003</uax:NumericId>
+      <uax:References>
+        <uax:Reference>
+          <uax:ReferenceTypeId>
+            <uax:Identifier>i=45</uax:Identifier>
+          </uax:ReferenceTypeId>
+          <uax:TargetId>
+            <uax:Identifier>i=58</uax:Identifier>
+          </uax:TargetId>
+        </uax:Reference>
+        <uax:Reference>
+          <uax:ReferenceTypeId>
+            <uax:Identifier>i=35</uax:Identifier>
+          </uax:ReferenceTypeId>
+          <uax:TargetId>
+            <uax:Identifier>i=85</uax:Identifier>
+          </uax:TargetId>
+        </uax:Reference>
+      </uax:References>
+    </CncAxisList>
+  </CncInterface>
+</uax:ListOfNodeState>
